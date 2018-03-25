@@ -1,0 +1,71 @@
+<html itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="https://img3.doubanio.com/f/talion/842daade93d98a46624b7a382b46765edfded376/css/card/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/f790c36a2c94c4.css">
+    <!-- Style Hack -->
+    <link rel="stylesheet" href="../../css/hack.css">
+    <style>
+        .page {
+            overflow-x: inherit;
+        }
+    </style>
+</head>
+
+<body ontouchstart>
+    <div id="TalionNav">
+        <header class="TalionNav">
+            <div class="TalionNav-primary">
+                <a href="/">
+                    <h1>豆花</h1>
+                </a>
+                <nav>
+                    <ul class="nav-list"></ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div class="page">
+        <div class="card">
+            <h1 class="title"></h1>
+            <section class="subject-info">
+                <div class="right">
+                    <a><img class="cover"></a>
+                </div>
+                <div class="left">
+                    <p class="rating">
+                        <span class="rating-stars"></span>
+                        <strong></strong>
+                        <span class="count"></span>
+                    </p>
+                    <p class="meta"></p>
+                </div>
+            </section>
+            <input id="user" type="hidden" value="">
+            <section class="subject-intro">
+                <h2></h2>
+                <div class="bd" style="position: static;">
+                    <p class="intro" data-clamp="3">
+                    </p>
+                </div>
+            </section>
+            <section class="subject-annotations">
+                <h2>刺杀骑士团长的读书笔记(170)</h2>
+                <div class="bd">
+                    <ul class="list">
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+<script th-inline="javascript">
+    window.config = {
+        book_id: [[${id}]]
+    }
+</script>
+<script src="../../js/base.js"></script>
+<script src="../../js/book.js"></script>
+</html>

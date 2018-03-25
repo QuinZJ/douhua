@@ -1,0 +1,43 @@
+<html lang="zh_CN" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="https://img3.doubanio.com/f/talion/2281473cd3e7c01bec0ea2625794c98800f0a1be/css/app/topic/main.css">
+    <style>
+        #app {
+            padding-top: 47px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/3a2e6cde9a4393a9.css">
+    <!-- Style Hack -->
+    <link rel="stylesheet" href="../css/hack.css">
+</head>
+
+<body>
+    <div id="TalionNav">
+        <header class="TalionNav">
+            <div class="TalionNav-primary">
+                <a href="/">
+                    <h1>豆花</h1>
+                </a>
+                <nav>
+                    <ul class="nav-list"></ul>
+                    <span class=""></span>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div id="app">
+        <h1 th:text="${name}"></h1>
+        <section id="list" class="grid"></section>
+    </div>
+</body>
+<script src="../js/base.js"></script>
+<script th:inline="javascript">
+    window.config = {
+        type: [[${type}]]
+    };
+</script>
+<script src="../js/type.js"></script>
+</html>
